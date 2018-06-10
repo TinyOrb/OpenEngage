@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Password recovery</title>
+
+<script src="script/jquery.min.js"></script>
+<script src="script/fg.js"></script>
+
+<link rel="stylesheet" href="style/cmn.css">
+<link rel="stylesheet" href="style/fg.css">
+
+<link rel="shortcut icon" type="image/png" href="/image/TinyOrb-ico-logo.png"/>
+
+</head>
+<body>
+
+	<div id="header">
+	</div>
+	
+	<div class="verification_field">
+		<input type=text id="email_id" placeholder="*Please enter email"/>
+		<button id="submit">submit</button>
+	</div>
+	
+</body>
+</html>
