@@ -8,9 +8,9 @@ $(document).ready(function(){
 	});
 	ajx.done(function(msg){
 		if(msg == "success")
-			window.location.replace("/Index.html");
+			window.location.replace("/index.html");
 		else
-			window.location.replace("/Index.html");
+			window.location.replace("/index.html");
 	});
 	
 })

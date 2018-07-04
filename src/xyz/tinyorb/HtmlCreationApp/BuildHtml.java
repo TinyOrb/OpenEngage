@@ -24,6 +24,9 @@ public class BuildHtml {
 				// Checking url is accessible
 				if(path != null)
 				{
+					// this bypass
+					return contextPath+"/"+Author+"/"+id+".html";
+					/*
 					URL u;
 					try {
 						u = new URL (mainUrl +"/"+contextPath+"/"+Author+"/"+id+".html");
@@ -41,7 +44,7 @@ public class BuildHtml {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
-					
+					*/
 				}
 				
 			}
