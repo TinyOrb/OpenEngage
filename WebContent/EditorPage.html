@@ -27,45 +27,40 @@
   			menubar:false,
   			resize: false,
   			statusbar: false,
-  			height : "480"
+  			height:'100%'
   		});
   	</script>
   	<script src="script/jquery.min.js"></script>
   	<script src="script/jetter.js"></script>
   	<script src="script/dropdown/dd.js"></script>
-	<script src="script/editInitialLoad.js"></script>  
-  	
+  	<script src="script/editInitialLoad.js"></script>
+	<script src="https://apis.google.com/js/api.js"></script>
+	<script src="script/api/yt.js"></script>  
 </head>
-<body>
+<body id="page_body">
 	<div id="header">
 		<div class="dropdown" id="logedin">
-		<a class="account" id="act">Guest</a>
-		
-		<div class="submenu">
-		<ul class="root">
-		<li ><a href="/DashBoard.html" >Dashboard</a></li>
-		<li ><a href="/Profile.html" >Profile</a></li>
-		<li ><a href="/Report.html">Report</a></li>
-		<li ><a href="/logout.html">Logout</a></li>
-		</ul>
+			<a class="account" id="act">Guest</a>
+
+			<div class="submenu">
+				<ul class="root">
+					<li><a href="/DashBoard.html">Dashboard</a></li>
+					<li><a href="/Profile.html">Profile</a></li>
+					<li><a href="/Report.html">Report</a></li>
+					<li><a href="/logout.html">Logout</a></li>
+				</ul>
+			</div>
+
 		</div>
-		
-		</div>
-		
+
 	</div>
-	
+
 	<div id="button-area">
-			<div id="publish" class="button_"> Publish</div>
-			<div id="save" class="button_"> Save</div>
-			<input type="text" id="heading" placeholder="Give Some title*">
-		</div>
-	
-		<div id="text-area">
-			<textarea id="editor-getcontent">
-			</textarea>
-		</div>
-		
-		
-		<div id="message"></div>
+		<div id="publish" class="button_">Publish</div>
+		<div id="save" class="button_">Save</div>
+		<input type="text" id="heading" class="button_"placeholder="Heading*">
+	</div>
+	<textarea id="text-area"></textarea>
+	<div id="message"></div>
 </body>
 </html>
