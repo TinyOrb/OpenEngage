@@ -24,7 +24,7 @@ $(document).ready(function(){
 	
 $("#save").click(function(){
 		
-		var content = tinyMCE.get('editor-getcontent').getContent();
+		var content = tinyMCE.get('text-area').getContent();
 		var nn = window.location.href.split("?")[1].split("&&")[0].split("=")[1];
 		var heading = $("#heading").val();
 		var category = "general";
@@ -61,7 +61,7 @@ $("#publish").click(function(){
 	var category = "general";
 	if(heading != "" && heading.length < 120)
 	{
-		var content = tinyMCE.get('editor-getcontent').getContent();
+		var content = tinyMCE.get('text-area').getContent();
 		var $pjax = $.ajax({
 			url:"InitPublish",
 			method:"POST",

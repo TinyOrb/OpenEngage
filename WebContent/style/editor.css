@@ -1,42 +1,42 @@
-html, body {
+html, body#page_body {
 	height:100%;
-	Widht:100%;
-	min-width:1300px;
-	margin: 0;
-	background:#bb6615;
+	width:100%;
+	margin:0;
+	background:#efefef;
+	//overflow-x:hidden;
 }
 
 #header{
 	height:10%;
 	min-height:80px;
-	Width:100%;
+	width:100%;
 	margin:0;
 	//background:#d8d8d8; //#ffa500;
 	background:#020202 url("../image/logo.jpg") 0px 0px no-repeat;
 	box-shadow: 0px 5px 5px rgba(10,10,10,0.8);
 }
 
-
 #button-area{
-	height:65px;//7%;
-	Width:100%;
+	margin:0;
+	height:5%;
+	width:97%;
 	min-width:1300px;
 	//min-height:65px;
-	background:#bb6615;
+	padding: 1%;
 }
 
-#publish{
-	margin:0 10px;
-	position:relative;
-	top: 15%;
-	left:2%;
-	mirgin-right:2%;
+.button_{
+	margin:0.2%;
 	padding:10px;
 	height:25px;
-	width:120px;
+	width:8%;
 	background:#226e01;
 	color : white;
 	text-align:center;
+	float:left;
+}
+
+#publish{
 	float:left;
 	cursor:pointer;
 }
@@ -48,16 +48,6 @@ html, body {
 	opacity:0.8;
 }
 #save{
-	margin:0 10px;
-	position:relative;
-	top: 15%;
-	left:2%;
-	padding:10px;
-	height:25px;
-	width:120px;
-	background:#226e01;
-	color : white;
-	text-align:center;
 	float:left;
 	cursor:pointer;
 }
@@ -68,12 +58,8 @@ html, body {
 	transform:translateY(1px);
 	opacity:0.8;
 }
-input[type="text"]#heading{
-	margin:0 10px;
-	width: 750px;
-	position:relative;
-	top: 15%;
-	left:2%;
+
+input[type="text"]{
     padding: 12px 20px;
     height:43px;
    // margin: 25px 20px;
@@ -81,22 +67,38 @@ input[type="text"]#heading{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    float:left;
+    
+}
+#heading{
+	width:40%;
+	float:left;
+	background:#ffffff;
+	color : #000000;
 }
 
-#text-area{
-	height:480px;
-	Width:98%;
-	margin:auto;
-	background:#d3d3d3;
-	clear:both;
-	z-index:-1;
+/*Container, container body, iframe*/
+.mce-tinymce, .mce-container-body, #code_ifr {
+    min-height: 80% !important;
 }
-
-#editor-getcontent
-{
-	height:100%;
-	Width:100%;
-	z-index:-1;
+/*Container body*/
+.mce-container-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
-
+/*Editing area*/
+.mce-container-body .mce-edit-area {
+    position: absolute;
+    top: 69px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+/*Footer*/
+.mce-tinymce .mce-statusbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
