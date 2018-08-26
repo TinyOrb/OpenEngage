@@ -16,10 +16,11 @@ border-width:1px;
 border-color:#575757;*/
 float:right;
 }
-/*.dropdown:hover{
-	background-color:#e0e1d5;
-	color:black;
-}*/
+
+.dropdown:hover{
+	background:#c0c0c0;
+}
+
 .submenu
 {
 background: #fff;
