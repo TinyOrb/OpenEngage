@@ -1,32 +1,15 @@
-html{
-	position:relative;
-	min-height: 100%;
-} 
-body {
+@import url("header.css");
+
+html, body {
 	height:100%;
-	Widht:100%;
+	Width:100%;
 	min-width:1300px;
 	min-height:100%;
 	margin: 0;
 	padding:0;
-	background:#bb6615;
-	//display:table;
-	margin:auto;
+	background:#000000;
 }
 
-#header{
-	position:fixed;
-	top:0;
-	left:0;
-	height:10%;
-	min-height:80px;
-	Width:100%;
-	margin:0;
-	//background:#400040; //#ffa500;
-	background:#000000 url("../image/logo.jpg") 0px 0px no-repeat;
-	box-shadow: 0px 5px 5px rgba(10,10,10,0.8);
-	z-index:50;
-}
 .newpost 
 {
 background:#ffffff;

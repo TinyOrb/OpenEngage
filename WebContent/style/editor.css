@@ -1,19 +1,10 @@
-html, body#page_body {
+@import url("header.css");
+html, body {
 	height:100%;
 	width:100%;
 	margin:0;
 	background:#efefef;
 	//overflow-x:hidden;
-}
-
-#header{
-	height:10%;
-	min-height:80px;
-	width:100%;
-	margin:0;
-	//background:#d8d8d8; //#ffa500;
-	background:#020202 url("../image/logo.jpg") 0px 0px no-repeat;
-	box-shadow: 0px 5px 5px rgba(10,10,10,0.8);
 }
 
 #button-area{
