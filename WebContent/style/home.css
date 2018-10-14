@@ -1,0 +1,27 @@
+#hbody{
+	margin:auto;
+	width:70%;
+	position:relative;
+	top:100px;
+}
+
+div.graybox{
+	height:120px;
+	width:90%;
+	margin: 15px 0;
+	background:#cfcfcf;
+	border-radius:5px;
+	padding:5px 50px 5px 50px;
+	text-align:justify;
+}
+
+div.graybox:hover{
+	box-shadow: 0 0 10px 5px rgba(140,90,15,0.8); 
+	-moz-box-shadow: 0 0 10px 5px rgba(140,90,15,0.8);  
+	-webkit-box-shadow: 0 0 10px 5px rgba(140,90,15,0.8); 
+	-o-box-shadow: 0 0 10px 5px rgba(140,90,15,0.8); 
+}
+
+a {
+    text-decoration: none;
+}

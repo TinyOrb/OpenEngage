@@ -17,7 +17,14 @@ $(document).ready(function(){
 			}
 		else
 			{
-				window.location.replace("/login.html");
+				var loc = window.location.href
+				if(loc.split("/")[3] == "home")
+					{
+					
+					}
+				else
+					window.location.replace("/login.html")
+				
 			}
 	});
 	

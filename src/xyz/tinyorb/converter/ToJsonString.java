@@ -107,8 +107,5 @@ public class ToJsonString<T> {
 		return strReturn = JSONValue.toJSONString(jObj);
 	}
 		return strReturn;
-	}
-
-		
-
+	}	
 }

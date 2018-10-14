@@ -2,3 +2,7 @@ hibernate.cfg.xml
 */hibernate.cfg.xml
 *hibernate.cfg.xml*
 *hibernate.cfg.xml
+.project
+.classpath
+.settings
+.settings/*
